@@ -7,8 +7,8 @@
     "dev": "nodemon ./src/bot"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ASHUdev05",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
