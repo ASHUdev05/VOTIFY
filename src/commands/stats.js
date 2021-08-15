@@ -1,4 +1,5 @@
-const {MessageEmbed} = require("discord.js")
+const {MessageEmbed} = require("discord.js");
+const { title } = require("process");
 module.exports = {
     name: 'stats',
     execute(message, client) {
@@ -18,10 +19,23 @@ module.exports = {
         const Os = require('os');
         const OsHostName = Os.hostname();
         const SystemPing = Math.round(message.client.ws.ping);
-        const exampleEmbed = new MessageEmbed()
-            .setColor('#b700ff')
-            .setTitle("Bot's Live Status")
-            .addField(" \u200B ", "**Bot Uptime** : ` " + `${Uptime}` + " `")
+        const exampleEmbed = { // new MessageEmbed()
+            color : '#b700ff',
+            title :"❤️‍🔥 | Bot's Live Status",
+            description : "💓 | **Bot Uptime** : ` " + `${Uptime}` + " `"+"\n"+
+            //.addField(" \u200B ", "** Bot's Hot Name** :  ` " + OsHostName + " `")
+            "🦠 | **Bot Current Version** : `   1.0.0   `"+"\n"+
+            "✨ | **Global Bot Prefix** : ` v! `"+"\n"+
+            "💽 | **CPU Usage** :  ` " + RamUsage + "Mb `"+"\n"+
+            "💾 | **Memory Usage** :  ` " + MemoryUsed + "Mb `"+"\n"+
+            "🖥️ | **Bot Platform** :  ` " + BotPlatform + " `"+"\n"+
+            "🏓 | **System Ping** :  ` " + SystemPing + " `"+"\n"+
+            "🔬 | **Channels** : ` " + `${message.client.channels.cache.size}` + " `"+"\n"+
+            "🏘️ | **Servers** : ` " + `${message.client.guilds.cache.size}` + " `"+"\n"+
+            "💕 | **Users** : ` " + `${message.client.users.cache.size}` + " `"
+
+            //.setDescription("Bot's Live Status"+"\n"+"las"+"\n"+"sd")
+            /*.addField(" \u200B ", "**Bot Uptime** : ` " + `${Uptime}` + " `")
             //.addField(" \u200B ", "** Bot's Hot Name** :  ` " + OsHostName + " `")
             .addField(" \u200B ", "**Bot Current Version** : `   1.0.0   `")
             .addField(" \u200B ", "**Global Bot Prefix** : ` v! `")
@@ -31,8 +45,11 @@ module.exports = {
             .addField(" \u200B ", "**System Ping** :  ` " + SystemPing + " `")
             .addField(" \u200B ", "**Channels** : ` " + `${message.client.channels.cache.size}` + " `")
             .addField(" \u200B ", "**Servers** : ` " + `${message.client.guilds.cache.size}` + " `")
-            .addField(" \u200B ", "**Users** : ` " + `${message.client.users.cache.size}` + " `")
-        message.channel.send(exampleEmbed);
+            .addField(" \u200B ", "**Users** : ` " + `${message.client.users.cache.size}` + " `")*/
+        };
+        message.channel.send({ embed: exampleEmbed })
+            .catch(err => console.log(err));
+        // message.channel.send(exampleEmbed);
     
     },
 };
