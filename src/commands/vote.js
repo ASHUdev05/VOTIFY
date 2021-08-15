@@ -18,6 +18,6 @@ let button2 = new disbut.MessageButton()
 let row = new disbut.MessageActionRow()
   .addComponents(button, button2);
 
-message.channel.send('Hello World!', row);
+message.channel.send('Upvote me on the following Bot Lists!', row);
     },
 };
