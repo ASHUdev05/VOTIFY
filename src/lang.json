@@ -1,334 +1,381 @@
 {
-    "languages": ["english", "spanish", "arabic", "kannada", "korean"],
+    "languages": ["english", "spanish", "arabic", "kannada", "korean", "russian"],
     "translations": {
         "PING": {
             "english": "API Latency is",
             "spanish": "La latencia de la API es de",
             "arabic": "وقت استجابة واجهة برمجة التطبيقات هي",
             "kannada": "API ಲೇಟೆನ್ಸಿ ಆಗಿದೆ",
-            "korean": "API 지연 시간"
+            "korean": "API 지연 시간",
+            "russian": "Задержка API"
         },
         "INVITE": {
             "english": "Invite VOTIFY to your Server",
             "spanish": "Invite a VOTIFY a su servidor",
             "arabic": "ضف VOTIFY الى سيرفرك",
             "kannada": "ನಿಮ್ಮ ಸರ್ವರ್‌ಗೆ VOTIFY ಅನ್ನು ಆಹ್ವಾನಿಸಿ",
-            "korean": "당신의 서버에 VOTIFY를 초대해주세요"
+            "korean": "당신의 서버에 VOTIFY를 초대해주세요",
+            "russian": "Пригласить VOTIFY на ваш сервер"
         },
         "REQUESTED_BY": {
             "english": "Requested by",
             "spanish": "Solicitado por",
             "arabic": "متوصية من",
             "kannada": "ಮೂಲಕ ವಿನಂತಿಸಲಾಗಿದೆ",
-            "korean": "에 의해 요청"
+            "korean": "에 의해 요청",
+            "russian": "Инициатор"
         },
         "HELP_TITLE": {
             "english": "VOTIFY's help menu",
             "spanish": "Menú de ayuda de VOTIFY",
             "arabic":  "قائمة المساعدة لVOTIFY",
             "kannada": "VOTIFYನ ಸಹಾಯ ಮೆನು",
-            "korean": "VOTIFY의 도움말 메뉴"
+            "korean": "VOTIFY의 도움말 메뉴",
+            "russian": "Меню помощи VOTIFY's"
         },
         "MADE_IN": {
             "english": "Made with ❤️ in 🇮🇳.",
             "spanish": "Hecho con ❤️ en 🇮🇳.",
             "arabic": "صُنع مع ❤️ في 🇮🇳.",
             "kannada": "🇮🇳 ನಲ್ಲಿ ❤️ ನಿಂದ ಮಾಡಲ್ಪಟ್ಟಿದೆ.",
-            "korean": "🇮🇳에서 ❤️으로 제작했습니다."
+            "korean": "🇮🇳에서 ❤️으로 제작했습니다.",
+            "russian": "Сделано с ❤️ в Индии."
         },
         "HELP_POLLS": {
             "english": "Polls",
             "spanish": "Encuestas",
             "arabic": "تصويتات",
             "kannada": "ಸಮೀಕ್ಷೆಗಳು",
-            "korean": "투표"
+            "korean": "투표",
+            "russian": "Опросы"
         },
         "HELP_NOTE": {
             "english": "Note:",
             "spanish": "Nota:",
             "arabic": "ملحوظة:",
             "kannada": "ಸೂಚನೆ:",
-            "korean": "참고:"
+            "korean": "참고:",
+            "russian": "Заметка:"
         },
         "HELP_LANGUAGE": {
             "english": "LANGUAGES",
             "spanish": "IDIOMAS",
             "arabic": "اللغات",
             "kannada": "ಭಾಷೆಗಳು",
-            "korean": "언어"
+            "korean": "언어",
+            "russian": "ЯЗЫКИ"
         },
         "HELP_LANGUAGE_DESC": {
             "english": "VOTIFY supports multiple languages. Currently supported languages - ( English, Spanish, Arabic, Kannada, Korean ). You can change the language by using",
             "spanish": "VOTIFY admite varios idiomas. Idiomas admitidos actualmente: ( Inglés, Español ). Puede cambiar el idioma usando",
             "arabic": "VOTIFY يدعم لغات متعددة. اللغات المدعومة حاليًا - (الإنجليزية و الإسبانية). يمكنك تغيير اللغة باستخدام",
             "kannada": "VOTIFY ಬಹು ಭಾಷೆಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. ಪ್ರಸ್ತುತ ಬೆಂಬಲಿತ ಭಾಷೆಗಳು - ( ಇಂಗ್ಲೀಷ್, ಸ್ಪ್ಯಾನಿಷ್, ಅರೇಬಿಕ್, ಕನ್ನಡ ). ಬಳಸುವ ಮೂಲಕ ನೀವು ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಬಹುದು",
-            "korean": "VOTIFY는 다국어를 지원합니다. 현재 지원되는 언어 - ( 영어, 스페인어 ). 다음을 사용하여 언어를 변경할 수 있습니다."
+            "korean": "VOTIFY는 다국어를 지원합니다. 현재 지원되는 언어 - ( 영어, 스페인어 ). 다음을 사용하여 언어를 변경할 수 있습니다.",
+            "russian": "VOTIFY поддерживает несколько языков. В настоящее время поддерживается - (Английский, Испанский). Ты можешь изменить язык, используя"
         },
         "HELP_TO_INVITE": {
             "english": "To invite VOTIFY:",
             "spanish": "Para invitar a VOTIFY:",
             "arabic": "لدعو VOTIFY:",
             "kannada": "VOTIFY ಅನ್ನು ಆಹ್ವಾನಿಸಲು:",
-            "korean": "VOTIFY를 초대하려면:"
+            "korean": "VOTIFY를 초대하려면:",
+            "russian": "Пригласить VOTIFY:"
         },
         "HELP_OTHER_COMMANDS": {
             "english": "Other Commands",
             "spanish": "Otros comandos",
             "arabic": "أوامر أخرى",
             "kannada": "ಇತರ ಆಜ್ಞೆಗಳು",
-            "korean": "다른 명령어들"
+            "korean": "다른 명령어들",
+            "russian": "Другие команды"
         },
         "HELP_STILL_HAVE_QUESTIONS": {
             "english": "Still have Questions:",
             "spanish": "Todavía tengo preguntas:",
             "arabic": "يزال لديك أسئلة:",
             "kannada": "ಇನ್ನೂ ಪ್ರಶ್ನೆಗಳಿವೆಯೇ:",
-            "korean": "아직 궁금한 점들이 있나요?:"   
+            "korean": "아직 궁금한 점들이 있나요?:",
+            "russian": "Остались вопросы:"   
         },
         "HELP_CREATE_POLL": {
             "english": "Create a poll using the command",
             "spanish": "Crea una encuesta usando el comando",
             "arabic": "إنشاء استطلاع باستخدام الأمر",
             "kannada": "ಆಜ್ಞೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಿ",
-            "korean": "명령어를 사용하여 설문 조사 만들기"
+            "korean": "명령어를 사용하여 설문 조사 만들기",
+            "russian": "Создайте опрос, используя команду"
         },
         "HELP_CREATE_POLL_E": {
             "english": "You can create a poll with an expiry date",
             "spanish": "Puede crear una encuesta con una fecha de vencimiento",
             "arabic": "يمكنك إنشاء استطلاع مع تاريخ انتهاء الصلاحية",
             "kannada": "ನೀವು ಮುಕ್ತಾಯ ದಿನಾಂಕದೊಂದಿಗೆ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಬಹುದು",
-            "korean": "만료 날짜가 있는 설문 조사를 만들 수 있습니다."
+            "korean": "만료 날짜가 있는 설문 조사를 만들 수 있습니다.",
+            "russian": "Ты можешь создать опрос со сроком истечения"
         },
         "HELP_CREATE_YN_POLL": {
             "english": "Create a normal yes-no poll using the command",
             "spanish": "Cree una encuesta normal de sí-no usando el comando",
             "arabic": "قم بإنشاء استطلاع عادي بنعم-لا باستخدام الأمر",
             "kannada": "ಆಜ್ಞೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಸಾಮಾನ್ಯ ಹೌದು-ಇಲ್ಲ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಿ",
-            "korean": "명령어를 사용하여 기본적인 예-아니요 투표를 만듭니다."
+            "korean": "명령어를 사용하여 기본적인 예-아니요 투표를 만듭니다.",
+            "russian": "Создайте обычный опрос да-нет с помощью команды"
         },
         "HELP_CREATE_YN_POLL_E": {
             "english": "You can create a yes-no poll with an expiry date",
             "spanish": "Puede crear una encuesta de sí o no con una fecha de vencimiento",
             "arabic": "يمكنك إنشاء استطلاع بنعم - لا مع تاريخ انتهاء الصلاحية",
             "kannada": "ನೀವು ಮುಕ್ತಾಯ ದಿನಾಂಕದೊಂದಿಗೆ ಹೌದು-ಇಲ್ಲ ಎಂಬ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಬಹುದು",
-            "korean": "만료 날짜가 있는 예-아니오 설문조사를 만들 수 있습니다."
+            "korean": "만료 날짜가 있는 예-아니오 설문조사를 만들 수 있습니다.",
+            "russian": "Ты можешь создать опрос да-нет со сроком истечения"
         },
         "HELP_EACH_OPTION": {
             "english": "Each poll can have up to 20 options.",
             "spanish": "Cada encuesta puede tener hasta 20 opciones.",
             "arabic": "يمكن أن يحتوي كل استطلاع على ما يصل إلى 20 خيارًا.",
             "kannada": "ಪ್ರತಿ ಸಮೀಕ್ಷೆಯು 20 ಆಯ್ಕೆಗಳನ್ನು ಹೊಂದಿರಬಹುದು.",
-            "korean": "각 투표에는 최대 20개의 옵션이 있을 수 있습니다."
+            "korean": "각 투표에는 최대 20개의 옵션이 있을 수 있습니다.",
+            "russian": "Каждый опрос может иметь до 20 вариантов."
         },
         "HELP_JOIN_OUR_SERVER": {
             "english": "Join our Support Server",
             "spanish": "Únase a nuestro servidor de soporte",
             "arabic": "انضم إلى سيرفر الدعم الخاص بنا",
             "kannada": "ನಮ್ಮ ಬೆಂಬಲ ಸರ್ವರ್‌ಗೆ ಸೇರಿ",
-            "korean": "당사의 지원 서버에 참여하기"
+            "korean": "당사의 지원 서버에 참여하기",
+            "russian": "Вступить на наш сервер"
         },
         "VOTE": {
             "english": "Upvote me on the following Bot Lists",
             "spanish": "Votarme en las siguientes listas de bots",
             "arabic": "صوت لي على قوائم الروبوتات التالية",
             "kannada": "ಕೆಳಗಿನ ಬಾಟ್ ಪಟ್ಟಿಗಳಲ್ಲಿ ನನಗೆ ಅಪ್ವೋಟ್ ಮಾಡಿ",
-            "korean": "Bot List에서 저를 추천하세요"
+            "korean": "Bot List에서 저를 추천하세요",
+            "russian": "Проголосуйте за меня в Списках ботов"
         },
         "INFO_NICKNAME": {
             "english": "Nickname",
             "spanish": "Apodo",
             "arabic": "اسم الشهرة",
             "kannada": "ಅಡ್ಡಹೆಸರು",
-            "korean": "닉네임"
+            "korean": "닉네임",
+            "russian": "Никнейм"
         },
         "INFO_JOINED_DISCORD": {
             "english": "Joined Discord on",
             "spanish": "Se unió a Discord en",
             "arabic": "انضم الى Discord في",
             "kannada": "ಡಿಸ್ಕೂಡ್ಗೆ ಸೇರಿದರು",
-            "korean": "가입된 디스코드 켜짐"
+            "korean": "가입된 디스코드 켜짐",
+            "russian": "Присоединился к Discord"
         },
         "INFO_JOINED_SERVER": {
             "english": "Joined this server on",
             "spanish": "Se unió a este servidor el",
             "arabic": "انضم الى السيرفر على",
             "kannada": "ಈ ಸರ್ವರ್‌ಗೆ ಸೇರಿದೆ",
-            "korean": "이 서버에 가입한 날짜"
+            "korean": "이 서버에 가입한 날짜",
+            "russian": "Вступил на этот сервер"
         },
         "INFO_PERMISSIONS": {
             "english": "Permissions",
             "spanish": "Permisos",
             "arabic": "أذونات",
             "kannada": "ಅನುಮತಿಗಳು",
-            "korean": "권한"
+            "korean": "권한",
+            "russian": "Разрешения"
         },
         "INFO1_CREDITS": {
             "english": "Credits",
             "spanish": "Creditos",
             "arabic": "اعتمادات",
             "kannada": "ಕೃತಘ್ನತೆ",
-            "korean": "크레딧"
+            "korean": "크레딧",
+            "russian": "Благодарности"
         },
         "INFO1_LAUNCHED": {
             "english": "Launched",
             "spanish": "Lanzado",
             "arabic": "انطلقت",
             "kannada": "ಪ್ರಾರಂಭಿಸಲಾಯಿತು",
-            "korean": "출시"
+            "korean": "출시",
+            "russian": "Запущен"
         },
         "INFO1_TOTAL_USERS": {
             "english": "Total Users",
             "spanish": "Usuarios totales",
             "arabic": "المستخدمون إجمالي",
             "kannada": "ಒಟ್ಟು ಬಳಕೆದಾರರು",
-            "korean": "총 사용자"
+            "korean": "총 사용자",
+            "russian": "Всего пользователей"
         },
         "INFO1_TOTAL_SERVERS": {
             "english": "Total Servers",
             "spanish": "Servidores totales",
             "arabic": "السيرفرات اجمالي",
             "kannada": "ಒಟ್ಟು ಸರ್ವರ್‌ಗಳು",
-            "korean": "총 서버 수"
+            "korean": "총 서버 수",
+            "russian": "Всего серверов"
         },
         "INFO1_OFFICIAL_SERVER": {
             "english": "Official Server",
             "spanish": "Servidor oficial",
             "arabic": "السيرفر الرسمي",
             "kannada": "ಅಧಿಕೃತ ಸರ್ವರ್",
-            "korean": "공식 서버"
+            "korean": "공식 서버",
+            "russian": "Официальный сервер"
         },
         "STATS_TITLE": {
             "english": "Bot's Live Status",
             "spanish": "Estado activo del bot",
             "arabic": "حالة البوت الحالية",
             "kannada": "ಬಾಟ್‌ನ ಲೈವ್ ಸ್ಥಿತಿ",
-            "korean": "봇의 라이브 상태"
+            "korean": "봇의 라이브 상태",
+            "russian": "Текущий статус бота"
         },
         "STATS_UPTIME": {
             "english": "Bot's Uptime",
             "spanish": "Tiempo de actividad del bot",
             "arabic": "مدة تشغيل البوت",
             "kannada": "ಬಾಟ್‌ನ ಅಪ್‌ಟೈಮ್",
-            "korean": "봇의 가동 시간"
+            "korean": "봇의 가동 시간",
+            "russian": "Время работы бота"
         },
         "STATS_HOSTNAME": {
             "english": "Bot's Host Name",
             "spanish": "Nombre de host del bot",
             "arabic": "اسم المضيف للبوت",
             "kannada": "ಬಾಟ್‌ನ ಹೋಸ್ಟ್ ಹೆಸರು",
-            "korean": "봇의 호스트 이름"
+            "korean": "봇의 호스트 이름",
+            "russian": "Имя хоста бота"
         },
         "STATS_CURR_V": {
             "english": "Bot's Current Version",
             "spanish": "Versión actual del bot",
             "arabic": "الڤيرشون الحالية للبوت",
             "kannada": "ಬಾಟ್‌ನ ಪ್ರಸ್ತುತ ಆವೃತ್ತಿ",
-            "korean": "봇의 현재 버전"
+            "korean": "봇의 현재 버전",
+            "russian": "Текущая версия бота"
         },
         "STATS_PREFIX": {
             "english": "Global Bot Prefix",
             "spanish": "Prefijo global del bot",
             "arabic": "مختصرة البوت",
             "kannada": "ಜಾಗತಿಕ ಬೋಟ್ ಪೂರ್ವಪ್ರತ್ಯಯ",
-            "korean": "글로벌 봇 접두사"
+            "korean": "글로벌 봇 접두사",
+            "russian": "Префикс бота"
         },
         "STATS_CPU": {
             "english": "CPU Usage",
             "spanish": "Uso de CPU",
             "arabic": "وحدة معالجة مركزية المستخدمة",
             "kannada": "ಸಿಪಿಯು ಬಳಕೆ",
-            "korean": "CPU 사용량"
+            "korean": "CPU 사용량",
+            "russian": "Использование CPU"
         },
         "STATS_MEM": {
             "english": "Memory Usage",
             "spanish": "Uso de memoria",
             "arabic": "الذاكرة المستخدمة",
             "kannada": "ಮೆಮೊರಿ ಬಳಕೆ",
-            "korean": "메모리 사용량"
+            "korean": "메모리 사용량",
+            "russian": "Использование ОЗУ"
         },
         "STATS_PLAT": {
             "english": "Bot Platform",
             "spanish": "Plataforma del sistema operativo",
             "arabic": "جهاز البوت",
             "kannada": "ಬೋಟ್ ವೇದಿಕೆ",
-            "korean": "봇 플랫폼"
+            "korean": "봇 플랫폼",
+            "russian": "Платформа бота"
         },
         "STATS_PING": {
             "english": "System Ping",
             "spanish": "Ping del sistema",
             "arabic": "بينغ النظام",
             "kannada": "ಸಿಸ್ಟಮ್ ಪಿಂಗ್",
-            "korean": "시스템 핑"
+            "korean": "시스템 핑",
+            "russian": "Системный пинг"
         },
         "STATS_CHANNEL": {
             "english": "Channels",
             "spanish": "Canales",
             "arabic": "القنوات",
             "kannada": "ವಾಹಿನಿಗಳು",
-            "korean": "채널"
+            "korean": "채널",
+            "russian": "Каналы"
         },
         "STATS_SERVER": {
             "english": "Servers",
             "spanish": "Servidores",
             "arabic": "السيرفرات",
             "kannada": "ಸರ್ವರ್ಗಳು",
-            "korean": "서버"
+            "korean": "서버",
+            "russian": "Сервера"
         },
         "STATS_USER": {
             "english": "Users",
             "spanish": "Usuarios",
             "arabic": "المستخدمين",
             "kannada": "ಬಳಕೆದಾರರು",
-            "korean": "유저"
+            "korean": "유저",
+            "russian": "Пользователи"
         },
         "POLL_TIME_E": {
             "english": "You need to specify a time for a timed poll.",
             "spanish": "Debes especificar una hora para una encuesta cronometrada.",
             "arabic": "عليك اختيار وقت للتصويتات المتوقطة.",
             "kannada": "ಸಮಯದ ಸಮೀಕ್ಷೆಗಾಗಿ ನೀವು ಸಮಯವನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಅಗತ್ಯವಿದೆ.",
-            "korean": "시간이 지정된 폴링 시간을 지정해야 합니다."
+            "korean": "시간이 지정된 폴링 시간을 지정해야 합니다.",
+            "russian": "Укажите время истечения опроса."
         },
         "POLL_TITLE_E": {
             "english": "You need to specify a poll title.",
             "spanish": "Debes especificar un título de encuesta.",
             "arabic": "عليك ان تحدد عنوان للتصويت.",
             "kannada": "ನೀವು ಪೋಲ್ ಶೀರ್ಷಿಕೆಯನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಅಗತ್ಯವಿದೆ.",
-            "korean": "설문조사의 제목을 지정해야 합니다."
+            "korean": "설문조사의 제목을 지정해야 합니다.",
+            "russian": "Укажите название для опроса."
         },
         "POLL_OPTION_E": {
             "english": "You need to specify poll options.",
             "spanish": "Necesitas especificar las opciones de la encuesta.",
             "arabic": "عليك اختيار اختيارات للتصويت.",
             "kannada": "ನೀವು ಪೋಲ್ ಆಯ್ಕೆಗಳನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಅಗತ್ಯವಿದೆ.",
-            "korean": "투표 옵션을 지정해야 합니다."
+            "korean": "투표 옵션을 지정해야 합니다.",
+            "russian": "Укажите параметры опроса."
         },
         "POLL_OPTION_E_1": {
             "english": "You can't have more than 20 poll options.",
             "spanish": "No puede tener más de 20 opciones de encuesta.",
             "arabic": "لا يمكنك الحثول على اكثر من 20 تصويت.",
             "kannada": "ನೀವು 20 ಕ್ಕಿಂತ ಹೆಚ್ಚು ಪೋಲ್ ಆಯ್ಕೆಗಳನ್ನು ಹೊಂದುವಂತಿಲ್ಲ.",
-            "korean": "투표 옵션은 20개를 초과할 수 없습니다."
+            "korean": "투표 옵션은 20개를 초과할 수 없습니다.",
+            "russian": "Вы не можете выбрать больше 20 вариантов опроса."
         },
         "POLL_ENDS_AT": {
             "english": "Ends at",
             "spanish": "Termina en",
             "arabic": "ينتهي عند",
             "kannada": "ನಲ್ಲಿ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ",
-            "korean": "종료 시간"
+            "korean": "종료 시간",
+            "russian": "Закончился"
         },
         "POLL_RES_TIE": {
             "english": "It was a tie",
             "spanish": "Fue un empate",
             "arabic": "كان تعادل",
             "kannada": "ಇದು ಟೈ ಆಗಿತ್ತು",
-            "korean": "무승부였다."
+            "korean": "무승부였다.",
+            "russian": "Ничья"
         },
         "POLL_RES_WIN": {
             "english": "The winner of the poll was option",
             "spanish": "El ganador de la encuesta fue la opción",
             "arabic": "اختيار فأز التصويت كان",
             "kannada": "ಸಮೀಕ್ಷೆಯಲ್ಲಿ ವಿಜೇತರು ಆಯ್ಕೆಯಾಗಿದ್ದರು",
-            "korean": "투표의 승자는 선택사항이었다."
+            "korean": "투표의 승자는 선택사항이었다.",
+            "russian": "Победителем опроса стал вариант"
         }
     }
 }

@@ -32,6 +32,10 @@ export default new Command({
             {
             name: `korean`,
             value: `korean`,
+            },
+            {
+            name: `russian`,
+            value: `russian`,
             },],
     }],
     run: async ({ interaction }) => {
