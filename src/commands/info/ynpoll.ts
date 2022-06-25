@@ -3,7 +3,7 @@ const emojiArray = require("../../../util/optArr");
 import { pollModel } from "../../../models/poll"
 const timeRegex = RegExp(/{(\d+(s|m|h|d|w))}/);
 import moment from "moment";
-import { MessageEmbed } from "discord.js";
+import { ApplicationCommandOptionType, CommandInteractionOptionResolver, EmbedBuilder } from "discord.js";
 import { Message } from "discord.js";
 const ms = require("ms");
 const language = require("../../language");
@@ -14,27 +14,27 @@ export default new Command({
     options: [{
         name: "timed_poll",
         description: "Select yes/no",
-        type: "BOOLEAN",
+        type: ApplicationCommandOptionType.Boolean,
         required: true,
     },
     {
         name: "title",
         description: "Enter poll title:",
-        type: "STRING",
+        type: ApplicationCommandOptionType.String,
         required: true,
     },
     {
         name: "time",
         description: "Enter poll time:",
-        type: "STRING",
+        type: ApplicationCommandOptionType.String,
         required: false,
     }],
 
     run: async ({ interaction }) => {
         const { guild } = interaction;
-        const boolean = interaction.options.getBoolean('timed_poll');
-        const string = interaction.options.getString('title');
-        const string1 = interaction.options.getString('time');
+        const boolean = (interaction.options as CommandInteractionOptionResolver).getBoolean('timed_poll');
+        const string = (interaction.options as CommandInteractionOptionResolver).getString('title');
+        const string1 = (interaction.options as CommandInteractionOptionResolver).getString('time');
         //const gargs = message.content.trim().split(/ +/g);
   let cmd = string;//gargs.join(' ').slice(prefix1.length).toUpperCase();
         
@@ -54,13 +54,16 @@ export default new Command({
         const timedPoll = (boolean === true) ? timeRegex.exec(args)[1] : null;
 
 
-        const embed = new MessageEmbed()
+        const embed = new EmbedBuilder()
 	.setColor('#0099ff')
 	.setTitle("❔ | " + cmd)
 	.setDescription(' \n\n\n\n\n\n👍 - YES \n\n👎 - NO \n\n 🤷 - IDK ')
-	.setThumbnail(interaction.client.user.displayAvatarURL({ format: 'png' }))
+	.setThumbnail(interaction.client.user.displayAvatarURL({ extension: 'png' }))
 	.setTimestamp()
-	.setFooter(timedPoll ? `${language(guild, "POLL_ENDS_AT")}: ${moment(Date.now() + ms(timedPoll)).format('LLLL')}` : ''+`| ${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, interaction.user.displayAvatarURL({ format: 'png' }));
+	.setFooter({
+        text: timedPoll ? `${language(guild, "POLL_ENDS_AT")}: ${moment(Date.now() + ms(timedPoll)).format('LLLL')}` : ''+`| ${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, 
+        iconURL: interaction.user.displayAvatarURL({ extension: 'png' })
+    });
 
         
         await interaction.editReply({ embeds: [embed] }).catch(err => console.log(err));

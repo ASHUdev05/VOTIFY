@@ -1,6 +1,6 @@
 import { Command } from "../../structures/Command";
 import { row } from "../../index";
-import { MessageEmbed } from "discord.js";
+import { EmbedBuilder, ApplicationCommandOptionType } from "discord.js";
 const language = require("../../language");
 
 export default new Command({
@@ -9,7 +9,7 @@ export default new Command({
     options: [{
         name: "target",
         description: "Select a user",
-        type: "USER",
+        type: ApplicationCommandOptionType.User,
         required: false,
     }],
     run: async ({ interaction }) => {
@@ -18,7 +18,7 @@ export default new Command({
     const temp = await interaction.guild.members.fetch(user);
     const perm = temp.permissions.toArray();
     if (user != undefined) {
-      const userEmbed = new MessageEmbed()
+      const userEmbed = new EmbedBuilder()
       .setTitle(user.tag)
       .setThumbnail(user.displayAvatarURL({ size: 1024 }))
       .setColor(0xFF0000)
@@ -28,8 +28,8 @@ export default new Command({
       `🗓️ **${language(guild, "INFO_JOINED_DISCORD")}:** \`${user.createdAt}\`\n\n` +
       `💬 **${language(guild, "INFO_JOINED_SERVER")}:** \`${temp.joinedAt}\`\n\n` + `🚩 **Roles:** ${temp.roles.cache.map(roles => roles).join(' ')}\n\n` + `🕯️ **${language(guild, "INFO_PERMISSIONS")}:** \`\`\`${perm.map(perms => perms).join(`,  `)}\`\`\``)
       .setTimestamp()
-      .setFooter(`${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, interaction.user.displayAvatarURL({ format: 'png' }));
-      interaction.editReply({ embeds: [userEmbed], components: [row] });
+      .setFooter({ text: `${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ extension: 'png' })});
+      interaction.editReply({ embeds: [userEmbed], components: [row as any] });
     } 
     }
 });

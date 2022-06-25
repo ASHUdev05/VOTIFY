@@ -1,5 +1,5 @@
 import { Command } from "../../structures/Command";
-import { MessageActionRow, MessageButton } from 'discord.js';
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
 const language = require("../../language");
 
 export default new Command({
@@ -7,23 +7,23 @@ export default new Command({
     description: "vote me to let me grow (:",
     run: async ({ interaction }) => {
     const { guild } = interaction;
-    const row = new MessageActionRow()
+    const row = new ActionRowBuilder()
     .addComponents(
-      new MessageButton()
+      new ButtonBuilder()
         .setLabel('top.gg!')
         .setURL('https://top.gg/bot/875678983465885706/vote')
-        .setStyle('LINK'),
-      new MessageButton()
+        .setStyle(ButtonStyle.Link),
+      new ButtonBuilder()
         .setLabel('Discord Bot List!')
         .setURL('https://discordbotlist.com/bots/votify/upvote')
-        .setStyle('LINK'),
-      new MessageButton()
+        .setStyle(ButtonStyle.Link),
+      new ButtonBuilder()
         .setLabel('Disbots!')
         .setURL('https://disbots.net/vote/875678983465885706')
-        .setStyle('LINK'),
+        .setStyle(ButtonStyle.Link),
     );
 
-		interaction.editReply({ content: `${language(guild, "VOTE")}!`, components: [row] })
+		interaction.editReply({ content: `${language(guild, "VOTE")}!`, components: [row as any] })
     .catch(err => console.log(err));
     }
 });

@@ -12,11 +12,11 @@ const loadLanguages = async () => {
     }
 };
 
-export const loadLang = loadLanguages;
+
 const setLanguage = (guild, language) => {
     guildLanguages[guild.id] = language ? language.toLowerCase() : "english";
 };
-export const setLang = setLanguage;
+
 module.exports = (guild, textId) => {
     if(!lang.translations[textId]) {
         throw new Error(`Language file does not contain the following textId: ${textId}`);
@@ -24,3 +24,6 @@ module.exports = (guild, textId) => {
     const selectedLanguage = guildLanguages[guild.id] ? guildLanguages[guild.id].toLowerCase() : "english";
     return lang.translations[textId][selectedLanguage];
 };
+
+module.exports.loadLanguages = loadLanguages;
+module.exports.setLanguage = setLanguage;

@@ -7,7 +7,7 @@ export default new Command({
     description: "replies with pong",
     run: async ({ interaction }) => {
         const { guild } = interaction;
-        interaction.followUp({content:`🏓 | ${language(guild, "PING")} ${Math.round(interaction.client.ws.ping)}ms`, components: [row]})
+        interaction.followUp({content:`🏓 | ${language(guild, "PING")} ${Math.round(interaction.client.ws.ping)}ms`, components: [row as any]})
         .catch(err => console.log(err));
     }
 });

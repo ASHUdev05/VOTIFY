@@ -1,6 +1,6 @@
 import { Command } from "../../structures/Command";
 import { row } from "../../index";
-import { MessageEmbed } from "discord.js";
+import { EmbedBuilder } from "discord.js";
 const language = require("../../language");
 
 export default new Command({
@@ -23,7 +23,7 @@ export default new Command({
         const OsHostName = Os.hostname();
         const SystemPing = Math.round(interaction.client.ws.ping);
 
-        const exampleEmbed = new MessageEmbed()
+        const exampleEmbed = new EmbedBuilder()
 	.setColor('#0099ff')
 	.setTitle(`❤️‍🔥 | ${language(guild, "STATS_TITLE")}\n`)
 	.setDescription(`💓 | **${language(guild, "STATS_UPTIME")}** : \` ` + `${Uptime}` + " `" + "\n" +
@@ -38,9 +38,12 @@ export default new Command({
     `🏘️ | **${language(guild, "STATS_SERVER")}** : \` ` + `${interaction.client.guilds.cache.size}` + " `" + "\n" +
     `💕 | **${language(guild, "STATS_USER")}** : \` ` + `${interaction.client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)}` + " `")
     .setTimestamp()
-    .setFooter(`${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, interaction.user.displayAvatarURL({ format: 'png' }))
+    .setFooter({
+        text: `${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, 
+        iconURL: interaction.user.displayAvatarURL({ extension: 'png' })
+    })
 
-    interaction.editReply({ embeds: [exampleEmbed], components: [row] })
+    interaction.editReply({ embeds: [exampleEmbed], components: [row as any] })
     .catch(err => console.log(err));
     }
 });

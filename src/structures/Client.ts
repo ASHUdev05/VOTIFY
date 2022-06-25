@@ -3,7 +3,7 @@ import {
     Client,
     ClientEvents,
     Collection,
-    Intents
+    GatewayIntentBits
 } from "discord.js";
 import { CommandType } from "../typings/Command";
 import glob from "glob";
@@ -17,7 +17,7 @@ export class ExtendedClient extends Client {
     commands: Collection<string, CommandType> = new Collection();
 
     constructor() {
-        super({ intents: [Intents.FLAGS.GUILDS,Intents.FLAGS.GUILD_MESSAGE_REACTIONS,Intents.FLAGS.GUILD_MESSAGES] });
+        super({ intents: [GatewayIntentBits.Guilds,GatewayIntentBits.GuildMessageReactions,GatewayIntentBits.GuildMessages] });
     }
 
     start() {

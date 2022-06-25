@@ -1,6 +1,6 @@
 import { Command } from "../../structures/Command";
 import { row } from "../../index";
-import { MessageEmbed } from 'discord.js';
+import { EmbedBuilder } from 'discord.js';
 const language = require("../../language");
 
 export default new Command({
@@ -8,16 +8,19 @@ export default new Command({
     description: "invite me to your place?",
     run: async ({ interaction }) => {
     const { guild } = interaction;
-    const exampleEmbed = new MessageEmbed()
+    const exampleEmbed = new EmbedBuilder()
 	.setColor('#0099ff')
 	.setDescription(`
     **❤️ | ${language(guild, "INVITE")}:** https://discord.com/api/oauth2/authorize?client_id=875678983465885706&permissions=2147740736&scope=bot%20applications.commands
 `)
-	.setThumbnail(interaction.client.user.displayAvatarURL({ format: 'png' }))
+	.setThumbnail(interaction.client.user.displayAvatarURL({ extension: 'png' }))
 	.setTimestamp()
-	.setFooter(`${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, interaction.user.displayAvatarURL({ format: 'png' }));
+	.setFooter({ 
+        text: `${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, 
+        iconURL: interaction.user.displayAvatarURL({ extension: 'png' })
+    });
     
-		return interaction.editReply({ embeds: [exampleEmbed], components: [row] })
+		return interaction.editReply({ embeds: [exampleEmbed], components: [row as any] })
     .catch(err => console.log(err));
     }
 });

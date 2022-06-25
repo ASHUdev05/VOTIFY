@@ -1,15 +1,15 @@
 import { Command } from "../../structures/Command";
 import { row, client } from "../../index";
-import { MessageEmbed} from "discord.js";
+import { EmbedBuilder } from "discord.js";
 const language = require("../../language");
-let embed = new MessageEmbed();
+let embed = new EmbedBuilder();
 
 export default new Command({
     name: "help",
     description: "Are you stuck step-user?",
     run: async ({ interaction }) => {
     const { guild } = interaction;
-    const exampleEmbed = new MessageEmbed()
+    const exampleEmbed = new EmbedBuilder()
 	.setColor('#0099ff')
 	.setTitle(language(guild, "HELP_TITLE"))
 	.setDescription(`
@@ -44,11 +44,11 @@ export default new Command({
     ${(language)(guild, "HELP_JOIN_OUR_SERVER")} : https://discord.gg/ZJ9Xts342B
     
     `)
-	.setThumbnail(interaction.client.user.displayAvatarURL({ format: 'png' }))
+	.setThumbnail(interaction.client.user.displayAvatarURL({ extension: 'png' }))
     .setTimestamp()
-	.setFooter(`${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, interaction.user.displayAvatarURL({ format: 'png' }));
+	.setFooter({ text:`${language(guild, "REQUESTED_BY")} ${interaction.user.tag}`, iconURL:interaction.user.displayAvatarURL({ extension: 'png' })});
 
-interaction.followUp({ embeds: [exampleEmbed], components: [row] })
+interaction.followUp({ embeds: [exampleEmbed], components: [row as any] })
     .catch(err => console.log(err));
 	},
 });

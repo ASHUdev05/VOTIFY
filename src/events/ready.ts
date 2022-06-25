@@ -2,7 +2,7 @@ import { Event } from "../structures/Event";
 import { row } from "../index";
 import { client } from "../index";
 import { pollModel } from "../../models/poll";
-import { TextChannel } from "discord.js";
+import { ActivityType, TextChannel } from "discord.js";
 import { Message } from "discord.js";
 const fetchAll = require('../../util/fetchAll');
 const emojiArray = require('../../util/optionArray');
@@ -13,7 +13,7 @@ export default new Event("ready", () => {
 
     client.user.setStatus("idle");
     var activities = [ `${client.guilds.cache.size} servers`, `${client.users.cache.size} users!`, `v4.0.0`, 'WATCHING your polls!' ], i = 0;
-    setInterval(() => client.user.setActivity(`\/help | ${activities[i++ % activities.length]}`, { type: "PLAYING" }),5000)
+    setInterval(() => client.user.setActivity(`\/help | ${activities[i++ % activities.length]}`, { type: ActivityType.Playing }),5000)
 
     setInterval(async () => {
         for (const guild of client.guilds.cache) {
@@ -41,7 +41,7 @@ export default new Event("ready", () => {
                         const allReactions = await fetchAll(msg, e).catch(err => console.log(err));
                         resultsArr1.push([e, typeof allReactions == 'object' ? allReactions.length : undefined]);
                     }
-                    console.log(resultsArr1);
+                    //console.log(resultsArr1);
                     const chartDataArr = [];
                     const chartDataArr1 = [];
                     for (var i = 0; i < resultsArr.length; i++) {
@@ -58,20 +58,20 @@ export default new Event("ready", () => {
                         chartDataArr1.push(element[1]);    
                     } 
                     };
-                    console.log(chartDataArr1);
+                    //console.log(chartDataArr1);
                                         resultsArr.sort((a, b) => b[1] - a[1]);
                                         resultsArr1.sort((a, b) => b[1] - a[1]);
 
                                         if ((resultsArr[0][1] == resultsArr[1][1]) && (resultsArr1[0][1] == resultsArr1[1][1])) {
-                    try{                       msg.reply({content:`It was a tie!`, components:[row]});
+                    try{                       msg.reply({content:`It was a tie!`, components:[row as any]});
                         }catch (e){ console.error(e);}
                                         }
                                         else if (resultsArr[0][1] != resultsArr[1][1]) {
-                    try{                     msg.reply({content:`The winner of the poll was option ${resultsArr[0][0]}`, components:[row]});
+                    try{                     msg.reply({content:`The winner of the poll was option ${resultsArr[0][0]}`, components:[row as any]});
                         }catch (e){console.error(e)}
                                         }
                                         else if (resultsArr1[0][1] != resultsArr1[1][1]) {
-                    try{                   msg.reply({content:`The winner of the poll was option ${resultsArr1[0][0]}`, components:[row]});
+                    try{                   msg.reply({content:`The winner of the poll was option ${resultsArr1[0][0]}`, components:[row as any]});
                         }catch (e){console.error(e)}
                                         }
                             }
