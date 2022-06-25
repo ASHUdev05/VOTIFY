@@ -7,6 +7,7 @@ import { Message } from "discord.js";
 const fetchAll = require('../../util/fetchAll');
 const emojiArray = require('../../util/optionArray');
 const emojiArray1 = require('../../util/optArr');
+const language = require("../language");
 
 export default new Event("ready", () => {
     console.log("Bot is online");
@@ -29,7 +30,7 @@ export default new Event("ready", () => {
 
           else {
                     const msg = await channel.messages.fetch(poll.message).catch(err => console.log(err)) as Message;
-
+                    const lang_guild = await client.guilds.fetch(poll.guild).catch(err => console.log(err));
                     const resultsArr = [];
                     const resultsArr1 = [];
 
@@ -63,15 +64,15 @@ export default new Event("ready", () => {
                                         resultsArr1.sort((a, b) => b[1] - a[1]);
 
                                         if ((resultsArr[0][1] == resultsArr[1][1]) && (resultsArr1[0][1] == resultsArr1[1][1])) {
-                    try{                       msg.reply({content:`It was a tie!`, components:[row as any]});
+                    try{                       msg.reply({content:`${language(lang_guild, "POLL_RES_TIE")}!`, components:[row as any]});
                         }catch (e){ console.error(e);}
                                         }
                                         else if (resultsArr[0][1] != resultsArr[1][1]) {
-                    try{                     msg.reply({content:`The winner of the poll was option ${resultsArr[0][0]}`, components:[row as any]});
+                    try{                     msg.reply({content:`${language(lang_guild, "POLL_RES_WIN")} ${resultsArr[0][0]}`, components:[row as any]});
                         }catch (e){console.error(e)}
                                         }
                                         else if (resultsArr1[0][1] != resultsArr1[1][1]) {
-                    try{                   msg.reply({content:`The winner of the poll was option ${resultsArr1[0][0]}`, components:[row as any]});
+                    try{                   msg.reply({content:`${language(lang_guild, "POLL_RES_WIN")} ${resultsArr1[0][0]}`, components:[row as any]});
                         }catch (e){console.error(e)}
                                         }
                             }
