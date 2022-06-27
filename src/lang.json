@@ -111,7 +111,7 @@
             "arabic": "يمكنك إنشاء استطلاع مع تاريخ انتهاء الصلاحية",
             "kannada": "ನೀವು ಮುಕ್ತಾಯ ದಿನಾಂಕದೊಂದಿಗೆ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಬಹುದು",
             "korean": "만료 날짜가 있는 설문 조사를 만들 수 있습니다.",
-            "russian": "Ты можешь создать опрос со сроком истечения"
+            "russian": "Создать опрос со сроком истечения"
         },
         "HELP_CREATE_YN_POLL": {
             "english": "Create a normal yes-no poll using the command",
@@ -119,7 +119,7 @@
             "arabic": "قم بإنشاء استطلاع عادي بنعم-لا باستخدام الأمر",
             "kannada": "ಆಜ್ಞೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಸಾಮಾನ್ಯ ಹೌದು-ಇಲ್ಲ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಿ",
             "korean": "명령어를 사용하여 기본적인 예-아니요 투표를 만듭니다.",
-            "russian": "Создайте обычный опрос да-нет с помощью команды"
+            "russian": "Создать опрос да-нет с помощью команды"
         },
         "HELP_CREATE_YN_POLL_E": {
             "english": "You can create a yes-no poll with an expiry date",
@@ -127,7 +127,7 @@
             "arabic": "يمكنك إنشاء استطلاع بنعم - لا مع تاريخ انتهاء الصلاحية",
             "kannada": "ನೀವು ಮುಕ್ತಾಯ ದಿನಾಂಕದೊಂದಿಗೆ ಹೌದು-ಇಲ್ಲ ಎಂಬ ಸಮೀಕ್ಷೆಯನ್ನು ರಚಿಸಬಹುದು",
             "korean": "만료 날짜가 있는 예-아니오 설문조사를 만들 수 있습니다.",
-            "russian": "Ты можешь создать опрос да-нет со сроком истечения"
+            "russian": "Создать опрос да-нет со сроком истечения"
         },
         "HELP_EACH_OPTION": {
             "english": "Each poll can have up to 20 options.",
@@ -231,7 +231,7 @@
             "arabic": "حالة البوت الحالية",
             "kannada": "ಬಾಟ್‌ನ ಲೈವ್ ಸ್ಥಿತಿ",
             "korean": "봇의 라이브 상태",
-            "russian": "Текущий статус бота"
+            "russian": "Текущий статус"
         },
         "STATS_UPTIME": {
             "english": "Bot's Uptime",
@@ -239,7 +239,7 @@
             "arabic": "مدة تشغيل البوت",
             "kannada": "ಬಾಟ್‌ನ ಅಪ್‌ಟೈಮ್",
             "korean": "봇의 가동 시간",
-            "russian": "Время работы бота"
+            "russian": "Время работы"
         },
         "STATS_HOSTNAME": {
             "english": "Bot's Host Name",
@@ -247,7 +247,7 @@
             "arabic": "اسم المضيف للبوت",
             "kannada": "ಬಾಟ್‌ನ ಹೋಸ್ಟ್ ಹೆಸರು",
             "korean": "봇의 호스트 이름",
-            "russian": "Имя хоста бота"
+            "russian": "Имя хоста"
         },
         "STATS_CURR_V": {
             "english": "Bot's Current Version",
@@ -255,7 +255,7 @@
             "arabic": "الڤيرشون الحالية للبوت",
             "kannada": "ಬಾಟ್‌ನ ಪ್ರಸ್ತುತ ಆವೃತ್ತಿ",
             "korean": "봇의 현재 버전",
-            "russian": "Текущая версия бота"
+            "russian": "Текущая версия"
         },
         "STATS_PREFIX": {
             "english": "Global Bot Prefix",
@@ -263,7 +263,7 @@
             "arabic": "مختصرة البوت",
             "kannada": "ಜಾಗತಿಕ ಬೋಟ್ ಪೂರ್ವಪ್ರತ್ಯಯ",
             "korean": "글로벌 봇 접두사",
-            "russian": "Префикс бота"
+            "russian": "Префикс"
         },
         "STATS_CPU": {
             "english": "CPU Usage",
@@ -287,7 +287,7 @@
             "arabic": "جهاز البوت",
             "kannada": "ಬೋಟ್ ವೇದಿಕೆ",
             "korean": "봇 플랫폼",
-            "russian": "Платформа бота"
+            "russian": "Платформа"
         },
         "STATS_PING": {
             "english": "System Ping",
@@ -295,7 +295,7 @@
             "arabic": "بينغ النظام",
             "kannada": "ಸಿಸ್ಟಮ್ ಪಿಂಗ್",
             "korean": "시스템 핑",
-            "russian": "Системный пинг"
+            "russian": "Задержка"
         },
         "STATS_CHANNEL": {
             "english": "Channels",
@@ -359,7 +359,7 @@
             "arabic": "ينتهي عند",
             "kannada": "ನಲ್ಲಿ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ",
             "korean": "종료 시간",
-            "russian": "Закончился"
+            "russian": "Остановлен"
         },
         "POLL_RES_TIE": {
             "english": "It was a tie",

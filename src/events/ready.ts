@@ -11,7 +11,6 @@ const language = require("../language");
 
 export default new Event("ready", () => {
     console.log("Bot is online");
-
     client.user.setStatus("idle");
     var activities = [ `${client.guilds.cache.size} servers`, `${client.users.cache.size} users!`, `v4.0.0`, 'WATCHING your polls!' ], i = 0;
     setInterval(() => client.user.setActivity(`\/help | ${activities[i++ % activities.length]}`, { type: ActivityType.Playing }),5000)
