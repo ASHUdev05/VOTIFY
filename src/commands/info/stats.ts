@@ -28,7 +28,7 @@ export default new Command({
 	.setTitle(`❤️‍🔥 | ${language(guild, "STATS_TITLE")}\n`)
 	.setDescription(`💓 | **${language(guild, "STATS_UPTIME")}** : \` ` + `${Uptime}` + " `" + "\n" +
     `🖥️ | **${language(guild, "STATS_HOSTNAME")}** :  \` ` + OsHostName + " `" + "\n" +
-    `🦠 | **${language(guild, "STATS_CURR_V")}** : \`   4.2.0   \`` + "\n" +
+    `🦠 | **${language(guild, "STATS_CURR_V")}** : \`   2207   \`` + "\n" +
     `✨ | **${language(guild, "STATS_PREFIX")}** : \` / \`` + "\n" +
     `💽 | **${language(guild, "STATS_CPU")}** :  \` ` + RamUsage + "Mb `" + "\n" +
     `💾 | **${language(guild, "STATS_MEM")}** :  \` ` + MemoryUsed + "Mb `" + "\n" +
