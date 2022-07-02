@@ -219,7 +219,7 @@ export default new Command({
         let i = 0;
         let args = "{"+string1+"}";
         const pollString = pollsArray.map(poll => `${emojiArray()[i++]} ${poll.replace(/\[|\]/g, '')}`).join('\n\n');
-        if (timeRegex.exec(args) == undefined) {
+        if (boolean && timeRegex.exec(args) == undefined) {
             return interaction.editReply(`${language(guild, "POLL_TIME_E")}`).catch(err => console.log(err));
         }
         const timedPoll = (boolean === true) ? timeRegex.exec(args)[1] : null;

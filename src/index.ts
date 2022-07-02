@@ -7,10 +7,10 @@ export const client = new ExtendedClient();
 
 export const row = new ActionRowBuilder()
     .addComponents(
-      new ButtonBuilder()
+      /*new ButtonBuilder()
         .setLabel('Upvote us!')
         .setURL('https://top.gg/bot/875678983465885706/vote')
-        .setStyle(ButtonStyle.Link),
+        .setStyle(ButtonStyle.Link),*/
       new ButtonBuilder()
         .setLabel('Visit Website!')
         .setURL('https://ashudev05.github.io/VOTIFY/')

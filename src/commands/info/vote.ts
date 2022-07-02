@@ -9,10 +9,10 @@ export default new Command({
     const { guild } = interaction;
     const row = new ActionRowBuilder()
     .addComponents(
-      new ButtonBuilder()
+      /*new ButtonBuilder()
         .setLabel('top.gg!')
         .setURL('https://top.gg/bot/875678983465885706/vote')
-        .setStyle(ButtonStyle.Link),
+        .setStyle(ButtonStyle.Link),*/
       new ButtonBuilder()
         .setLabel('Discord Bot List!')
         .setURL('https://discordbotlist.com/bots/votify/upvote')

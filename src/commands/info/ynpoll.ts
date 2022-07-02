@@ -48,7 +48,7 @@ export default new Command({
         
         let i = 0;
         let args = "{"+string1+"}";
-        if (timeRegex.exec(args) == undefined) {
+        if (boolean && timeRegex.exec(args) == undefined) {
             return interaction.editReply(`${language(guild, "POLL_TIME_E")}`).catch(err => console.log(err));
         }
         const timedPoll = (boolean === true) ? timeRegex.exec(args)[1] : null;
